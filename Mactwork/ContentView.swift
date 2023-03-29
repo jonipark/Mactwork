@@ -10,15 +10,15 @@ import SystemConfiguration
 import CoreWLAN
 
 struct ContentView: View {
+    @State private var connectionStatus: String = "Not Connected"
     @State private var ethernetAddress: String = ""
     @State private var wifiAddress: String = ""
     @State private var ethernetMACAddress: String = ""
     @State private var wifiMACAddress: String = ""
-    @State private var connectionStatus: String = "Not Connected"
     @State private var wifiSSID: String = ""
     @State private var signalStrength: Int = 0
     @State private var linkSpeed: Int = 0
-    @State private var networkUsageByProcess: [(name: String, usage: String)] = []
+//    @State private var networkUsageByProcess: [(name: String, usage: String)] = []
 
 
     var body: some View {
